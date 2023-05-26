@@ -10,6 +10,46 @@
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <h1>Ride WorldWide</h1>
+        <h3 style="font-style: italic;">For Bike Riders Everywhere</h3>
+    </header>
+    <div class="container">
+            <form>
+                <select>
+                    <option value="" disabled selected hidden>Make Your Choice</option> <!-- Searched google for this specific line of code in order to put a placeholder on a select element -->
+                    <option>country</option>
+                    <option>state</option>
+                    <option>city</option>
+                </select><br>
+                <input type="text" name="country" placeholder="Input Text Here">
+                <input type="submit" name="search" value="search">
+            </form>
+        </div>
+        <div class="keyimg">
+            <div class="infokey">
+                <h2 class="keyscript">Search Key</h2>
+                <ol>
+                    <li> 
+                        <span class="forcountrysearch"><strong>For Country Search:</strong></span> 
+                        Use Country's 2 letter Acronym<br>
+                        (e.g.) - RU (Russia) 
+                    </li>
+                    <li>  
+                        <span class="forcitysearch"><strong>For City/State Search:</strong></span> 
+                        Type in your city followed by the state<br>
+                        <span style="text-decoration: underline;">For Countries with states:</span><br> 
+                        (e.g.) <strong>"New York, NY"</strong><br>
+                        <span style="text-decoration: underline;">For Countries without states; Just Use City Name:</span><br> 
+                        (e.g.) <strong>"Moscow"</strong><br>
+
+
+                    </li>
+                    
+                </ol>
+
+
+            </div>
+        </div>
 </body>
 </html>
