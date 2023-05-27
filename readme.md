@@ -11,15 +11,6 @@ Ride Worldwide is made for Bike-Riders All over the world. It allows users to in
 
 </br>
 
-### **API Description**
-
----
-- Sports & Fitness API that provides a network of public city bikes around the globe with individual descriptions for each object inclduing: (name, id, loocation, company, etc..)
-
-- CityBikes API Documentation: https://api.citybik.es/v2/
-
-</br>
-
 ### **Technologies Used**
 
 ---
@@ -29,6 +20,15 @@ Ride Worldwide is made for Bike-Riders All over the world. It allows users to in
 - JavaScript
 - jQuery
 - ajax
+
+</br>
+
+### **API Description**
+
+---
+- Sports & Fitness API that provides a network of public city bikes around the globe with individual descriptions for each object inclduing: (name, id, loocation, company, etc..)
+
+- CityBikes API Documentation: https://api.citybik.es/v2/
 
 </br>
 
