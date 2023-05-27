@@ -4,62 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rider Finder</title>
+    <link rel="shortcut icon" href="./img/bikeicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Ride WorldWide</h1>
-        <h3 style="font-style: italic;">For Bike Riders Everywhere</h3>
-    </header>
     <div class="container">
+            <h1>Ride WorldWide</h1>
+            <h2>For Bike Riders Everywhere</h2>
+        
+        <div class="form-container">
             <form>
+                <button><a href="https://www.iban.com/country-codes" target="_blank">Country Alpha-2 Code Key</a></button><br>
                 <select>
-                    <option value="" disabled selected hidden>Make Your Choice</option> <!-- Searched google for this specific line of code in order to put a placeholder on a select element -->
+                    <option value="" disabled selected hidden>Select Your Choice</option>
                     <option>Country</option>
                     <option>City/State</option>
                 </select><br>
                 <input type="text" name="country" placeholder="Input Text Here">
-                <input type="submit" name="search" value="search">
+                <input type="submit" name="search" value="submit">
             </form>
         </div>
-        <div class="keyimg">
-            <div class="infokey">
-                <h2 class="keyscript">Search Key</h2>
-                <ol>
-                    <li> 
-                        <span class="forcountrysearch"><strong>For Country Search:</strong></span> 
-                        Use Country's 2 letter Acronym<br>
-                        (e.g.) - RU (Russia) 
-                    </li>
-                    <li>  
-                        <span class="forcitysearch"><strong>For City/State Search:</strong></span><br>
-                        <!-- Type in your city followed by the state<br> -->
-                        <span style="text-decoration: underline;">For Countries with states:</span><br> 
-                        (e.g.) <strong>"New York, NY"</strong><br>
-                        <span style="text-decoration: underline;">For Countries without states,<br>
-                        Just Use City Name:</span><br> 
-                        (e.g.) <strong>"Moscow"</strong><br>
-                    </li>
-                </ol>
+        <div class="combined-div-container">
+            <div class="keyimg">
+                <div class="infokey">
+                    <h2>Search Key</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>For Country Search</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> 
+                                    Use Country's 2 letter Acronym<br>
+                                    (e.g.) <strong>"AZ"</strong> for <span class="forcountryname">Azerbaijan</span> 
+                                </td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th>For City/State Search</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span style="text-decoration: underline;">Type in your city followed by the state</span><br>
+                                    <span style="color: red; text-decoration: underline;">Countries with states:</span><br>
+                                     <span style="font-weight: 700;">"New York, NY"</span><br>
+                                     <span style="color: red; text-decoration: underline;">For Countries without states</span><br>
+                                     <span style="color: green; font-weight: 600;">Just Use City Name:</span>
+                                     <span style="font-weight: 700;">"Moscow"</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="bottom">
             <div class="bottomphotos">
-                <img src="./img/confusedphonesearch.jpeg">
-                <img src="./img/familybiking.avif">
-                <img src="./img/cartierwatch.jpeg">
-                <img src="./img/bikinginspace.jpeg">
+                <div class="image-container">
+                    <img src="./img/confusedphonesearch.jpg">
+                    <h3>Don't Stress Searching For A Way Around</h3>
+                </div>
+                <div class="image-container">
+                    <img src="./img/cartierwatch.jpg">
+                    <h3 class="ridewithanyone">At Anytime</h3>
+                </div>
+                <div class="image-container">
+                    <img src="./img/familybiking.avif">
+                    <h3 class="ridewithanyone">Ride With Anyone</h3>
+                </div>
+                <div class="image-container">
+                    <img src="./img/anywherebike.jpeg">
+                    <h3 class="ridewithanyone">To Anywhere</h3>
+                </div>
             </div>
-            <div class="bottomtext">
-                <h3 style="text-decoration: none;">Don't Stress Searching For A Way Aorund</h3>
-                <h3 class="ridewithanyone">Ride With Anyone</h3>
-                <h3 class="ridewithanyone">At Anytime</h3>
-                <h3 class="ridewithanyone">To Anywhere</h3>
-            </div>
-          </div>  
         </div>
+    </div>
 </body>
 </html>
