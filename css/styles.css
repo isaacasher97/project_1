@@ -31,7 +31,6 @@ h2 {
 .form-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 input, select {
