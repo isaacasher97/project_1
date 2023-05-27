@@ -20,6 +20,7 @@ Ride Worldwide is made for Bike-Riders All over the world. It allows users to in
 - JavaScript
 - jQuery
 - ajax
+- CityBikes API
 
 </br>
 
