@@ -10,7 +10,10 @@ $(document).ready(function() {
             let locationInfo;
 
             for (let i = 0; i < data.networks.length; i++) {
-                if (data.networks[i].location.city === userInput) {
+                if (
+                    data.networks[i].location.city === userInput ||
+                    data.networks[i].location.country === userInput
+                ) {
                     found = true;
                     locationInfo = data.networks[i].location;
                     break;
