@@ -4,7 +4,7 @@ $(document).ready(function() {
 
         const userInput = $("input[name='country']").val().toLowerCase(); 
 
-        $.ajax("http://api.citybik.es/v2/networks")
+        $.ajax("https://api.citybik.es/v2/networks")
         .then(function(data) {
             let found = false;
             let locationInfo;
