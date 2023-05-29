@@ -13,9 +13,12 @@ $(document).ready(function() {
                 if (data.networks[i].location.city === userInput) {
                     found = true;
                     locationInfo = data.networks[i].location;
-                    break;// breaks the loop
+                    break;
                 }
             }
+
+            // Remove any previous result
+            $(".keyimg .answer").remove();
 
             if (found) {
                 // Render the location information in the keyimg div
