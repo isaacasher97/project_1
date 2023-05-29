@@ -6,10 +6,16 @@ $(document).ready(function() {
 
         $.ajax("http://api.citybik.es/v2/networks")
         .then(function(data) {
-    
+            let found = false;
+            let locationInfo;
+
+            for (let i = 0; i < data.networks.length; i++) {
+                if (data.networks[i].location.city === userInput) {
+                    found = true;
+                    locationInfo = data.networks[i].location;
+                    break;// breaks the loop
+                }
+            }
         });
     });
-    
-    console.dir(document.body);
-
 });
