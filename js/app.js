@@ -2,12 +2,14 @@ $(document).ready(function() {
     $("form").submit(function(event) {
         event.preventDefault(); // Prevent the default form submission
 
-        const userInput = $("input[name='country']").val().toLowerCase(); 
+        const userInput = $("input[name='country']").val().toLowerCase();
 
         $.ajax("https://api.citybik.es/v2/networks")
         .then(function(data) {
             let found = false;
             let locationInfo;
+            let name;
+            let company;
 
             for (let i = 0; i < data.networks.length; i++) {
                 const city = data.networks[i].location.city.toLowerCase();
@@ -16,6 +18,8 @@ $(document).ready(function() {
                 if (city === userInput || country === userInput) {
                     found = true;
                     locationInfo = data.networks[i].location;
+                    name = data.networks[i].name;
+                    company = data.networks[i].company;
                     break;
                 }
             }
@@ -24,8 +28,10 @@ $(document).ready(function() {
             $(".keyimg .answer").remove();
 
             if (found) {
-                // Render the location information in the keyimg div
+                // Render the location, name, and company information in the keyimg div
                 let popupContent = "<h2>Location Information</h2>";
+                popupContent += "<p><strong>Name:</strong> " + name + "</p>";
+                popupContent += "<p><strong>Company:</strong> " + company + "</p>";
                 popupContent += "<p><strong>City:</strong> " + locationInfo.city + "</p>";
                 popupContent += "<p><strong>Country:</strong> " + locationInfo.country + "</p>";
                 popupContent += "<p><strong>Latitude:</strong> " + locationInfo.latitude + "</p>";
