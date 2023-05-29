@@ -68,8 +68,9 @@ $.ajax("http://api.citybik.es/v2/networks")
 ### **Details about Difficulties**
 
 ---
+- Search is cap-sensitive to the exact name of the city or country when a user inputs it's name and will not render the information onto the screen unless name is an exact match 
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+**I Figured out how to make the search case insensitive and not worry about exact capitalization when the user searches ***by adding .lowercase() to the end of line 5 in the app.js file*****
 
 </br>
 
