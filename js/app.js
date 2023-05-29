@@ -16,6 +16,20 @@ $(document).ready(function() {
                     break;// breaks the loop
                 }
             }
+
+            if (found) {
+                // Render the location information in the keyimg div
+                let popupContent = "<h2>Location Information</h2>";
+                popupContent += "<p><strong>City:</strong> " + locationInfo.city + "</p>";
+                popupContent += "<p><strong>Country:</strong> " + locationInfo.country + "</p>";
+                popupContent += "<p><strong>Latitude:</strong> " + locationInfo.latitude + "</p>";
+                popupContent += "<p><strong>Longitude:</strong> " + locationInfo.longitude + "</p>";
+                $(".keyimg").append("<div class='answer'>" + popupContent + "</div>");
+            } else {
+                // Render the error message in the keyimg div
+                const errorMessage = "Error, 404. No information found.";
+                $(".keyimg").append("<div class='answer error'>" + errorMessage + "</div>");
+            }
         });
     });
 });
