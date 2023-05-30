@@ -6,7 +6,7 @@ $(document).ready(function() {
 
         const userInput = $("input[name='country']").val().toLowerCase(); // Get and convert the user input to lowercase
 
-        $.ajax("http://api.citybik.es/v2/networks")
+        $.ajax("https://api.citybik.es/v2/networks")
         .then(function(data) {
             let found = false; // Flag to check if a match is found
             let locationInfo; // Stores the location information
@@ -52,7 +52,7 @@ $(document).ready(function() {
                 });
             } else {
                 // Render the error message in the keyimg div
-                const errorMessage = "Error, 404. No information found.";
+                const errorMessage = "Sorry, No Rides Found 😔😔";
                 $(".keyimg").append("<div class='answer error'>" + errorMessage + "</div>");
             }
         });
