@@ -74,6 +74,21 @@ $.ajax("http://api.citybik.es/v2/networks")
 
 </br>
 
+- One of the biggest problems I had to solve was figuring out how to create a link within a button that opened up a google maps search with the SPECIFIC latitude + longitude values that were pulled from the City Bikes api data and rendered onto the screen, followed by using that longitude + latitude as parameters for its google maps search. 
+
+</br>
+
+- My primary issue was not wanting to go through the process of using a google api key. After hours of thorough research through google maps documentation, stack overflow, reddit, and google search, I was able to locate the exact answer that I needed [HERE!](https://developers.google.com/maps/documentation/urls/get-started)
+
+</br>
+
+- In the Maps URL's Documentation linked above, there is a section that mentions Launching Google Maps and performing a specific action (Like a search)using a url scheme. This did not require an api key.  
+
+- Using the given url scheme ``` https://www.google.com/maps/search/?api=1&parameters ```
+I added in the proper parameters in the app.js file line number 40
+
+</br>
+
 ### **Daily Schedule**
 
 ---
