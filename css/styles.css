@@ -147,6 +147,7 @@ button {
   border-radius: 4px;
   text-align: center;
   width: 30%;
+  word-wrap: break-word;
 }
 
 .answer h2 {
@@ -167,4 +168,21 @@ button {
 
 .answer.error p {
   color: crimson;
+}
+
+@media only screen and (max-width: 600px) {
+  .combined-div-container {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .bottomphotos {
+    justify-content: flex-start;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: 200px;
+  }
 }
