@@ -59,6 +59,7 @@ button {
     height: 700px;
     margin: 20px auto;
     padding: 20px;
+    overflow: auto;
 }
 
 .keyimg {
@@ -69,6 +70,7 @@ button {
     align-items: center;
     margin-bottom: 5px;
     gap: 5px;
+    overflow: auto;
 }
 
 .infokey {
