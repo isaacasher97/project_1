@@ -68,31 +68,44 @@ button {
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
+    gap: 5px;
 }
 
 .infokey {
-    text-align: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.infokey h2 {
+  margin: 0;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .infokey table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ddd;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .infokey th, .infokey td {
-    padding: 10px;
-    border: 1px solid #000000;
+  padding: 10px;
+  border: 1px solid #000000;
 }
 
 .infokey th {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
-.forcountryname {
-    color: green;
-    font-weight: 700;
+.infokey .forcountryname {
+  color: green;
+  font-weight: 700;
 }
+
 
 .bottomphotos {
     display: flex;
@@ -122,4 +135,34 @@ button {
     color: #fff;
     font-size: 16px;
     line-height: 1;
+}
+
+.answer, .answer.error {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  text-align: center;
+  width: 30%;
+}
+
+.answer h2 {
+  margin: 0;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.answer p {
+  margin: 10px 0;
+}
+
+.answer.error {
+  background-color: #ffdddd;
+  border-color: crimson;
+  color: crimson;
+}
+
+.answer.error p {
+  color: crimson;
 }

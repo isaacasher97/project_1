@@ -21,13 +21,14 @@ Ride Worldwide is made for Bike-Riders All over the world. It allows users to in
 - jQuery
 - ajax
 - CityBikes API
+- Google Maps URLs Documentation
 
 </br>
 
 ### **API Description**
 
 ---
-- Sports & Fitness API that provides a network of public city bikes around the globe with individual descriptions for each object inclduing: (name, id, loocation, company, etc..)
+- Sports & Fitness API that provides a network of public city bikes around the globe with individual descriptions for each object including: (name, id, location, company, etc..)
 
 - CityBikes API Documentation: https://api.citybik.es/v2/
 
@@ -85,7 +86,11 @@ $.ajax("http://api.citybik.es/v2/networks")
 - In the Maps URL's Documentation linked above, there is a section that mentions Launching Google Maps and performing a specific action (Like a search)using a url scheme. This did not require an api key.  
 
 - Using the given url scheme ``` https://www.google.com/maps/search/?api=1&parameters ```
-I added in the proper parameters in the app.js file line number 40
+I added in the proper parameters in the app.js file line numbers 47-51
+
+- Link to google maps urls documentation: https://developers.google.com/maps/documentation/urls/get-started#forming-the-url
+
+- Link to Stackoverflow answer that helped me add the proper parameters to the url scheme: https://stackoverflow.com/a/44859423
 
 </br>
 

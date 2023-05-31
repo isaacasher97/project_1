@@ -40,7 +40,7 @@ $(document).ready(function() {
                 popupContent += "<p><strong>Country:</strong> " + locationInfo.country + "</p>";
                 popupContent += "<p><strong>Latitude:</strong> " + locationInfo.latitude + "</p>";
                 popupContent += "<p><strong>Longitude:</strong> " + locationInfo.longitude + "</p>";
-                popupContent += "<button class='directions-button'>Get Directions</button>";
+                popupContent += "<button class='directions-button'>🚴Get Directions🚴</button>";
                 $(".keyimg").append("<div class='answer'>" + popupContent + "</div>");
 
                 // Add event listener to the directions button
