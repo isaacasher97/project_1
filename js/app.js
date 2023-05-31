@@ -52,7 +52,7 @@ $(document).ready(function() {
                 });
             } else {
                 // Render the error message in the keyimg div
-                const errorMessage = "Sorry, No Rides Found 😔😔";
+                const errorMessage = "Sorry, No Rides Found 😔";
                 $(".keyimg").append("<div class='answer error'>" + errorMessage + "</div>");
             }
         });
