@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Righteous&family=Rubik+Puddles&display=swap');
+body {
+    background-image: url(../img/ridwwbgphoto.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 8px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+  }
+  
+  .navbar li {
+    display: inline;
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+  
+    text-decoration: underline;
+  }
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10% auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  
+  
+  
+  
+  
+  
