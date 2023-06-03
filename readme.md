@@ -114,4 +114,26 @@ I added in the proper parameters in the app.js file line numbers 47-51
 
 You Can Find The City Bike Search Engine [Here!](https://project-1-inky-gamma.vercel.app/)
 
+</br>
 
+### **Unsolved Problems**
+
+---
+
+- Coding JS to allow the user input to still equal true and render the answer on screen without the full name of the city, also if the city name included a comma, I am still finding a challenge in allowing it to work.
+
+- I tried this code to fix the issue with a comma:
+
+</br>
+
+```js 
+
+//Line 22 of JS
+// Check if the city or country matches the user input (ignoring comma in the user input) DID NOT WORK
+if (city.includes(userInput.replace(',', '')) || country === userInput) {}
+
+```
+
+- This code did work when not including the comma, but it mixed up country locations when searching countries and gave the wrong answers. 
+
+(e.g. Gave a city in the country of Greece when searching "us" for United States) 
