@@ -5,7 +5,7 @@ $(document).ready(function() {
         event.preventDefault(); // Prevent the default form submission
 
         const userInput = $("input[name='country']").val().toLowerCase(); // Get and convert the user input to lowercase
-
+        
         $.ajax("https://api.citybik.es/v2/networks")
         .then(function(data) {
             let found = false; // Flag to check if a match is found

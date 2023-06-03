@@ -7,7 +7,7 @@ By Isaac Asher
 
 ---
 
-Ride Worldwide is made for Bike-Riders All over the world. It allows users to input their location & find the nearest public city bikes that they can use. Through the use of a form, Users can select between 2 choices of Country or City/State. Enter the name in a text box below that selection, and then search for the nearest public city bikes available for use by pulling the API Data from the Public CityBikes API Documentation and rendering it to the screen once the form is submitted.
+Rider Finder is made for Cyclists All over the world. It allows users to input their location & find the nearest public city bikes that they can use. Through the use of a form, Users can choose to search with their Country or City. Enter the name in a text box below that selection, and then search for the nearest public city bikes available for use by pulling the API Data from the Public CityBikes API Documentation and rendering it to the screen once the form is submitted.
 
 </br>
 
@@ -71,7 +71,7 @@ $.ajax("http://api.citybik.es/v2/networks")
 ---
 - Search is cap-sensitive to the exact name of the city or country when a user inputs it's name and will not render the information onto the screen unless name is an exact match 
 
-**I Figured out how to make the search case insensitive and not worry about exact capitalization when the user searches ***by adding .toLowerCase() to the end of line 5 in the app.js file*****
+**I Figured out how to make the search case insensitive and not worry about exact capitalization when the user searches ***by adding .toLowerCase() to the end of line 7 in the app.js file*****
 
 </br>
 
